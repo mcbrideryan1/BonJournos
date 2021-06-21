@@ -1,0 +1,170 @@
+body {
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat";
+  font-weight: 900;
+}
+
+p.coloured-section {
+  color: #ffffff;
+  margin: auto;
+}
+
+p.white-section {
+  color: #ff8a00;
+  margin: auto;
+}
+
+/* headings */
+.big-heading {
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* containers */
+.container-fluid {
+  padding: 7% 15%;
+}
+
+/* sections */
+
+.colored-section {
+  background-color: #ff8a00;
+  color: #ffffff;
+}
+
+.white-section {
+  background-color: #fff;
+}
+
+/* Navigation Bar */
+.navbar {
+  padding-bottom: 0 0 4.5rem;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+}
+
+.nav-item {
+  padding: 0 18px;
+  font-family: "Montserrat";
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+
+/* title section */
+
+#title.container-fluid {
+  padding: 3% 15% 7%;
+  text-align: left;
+}
+
+/* Download Buttons */
+.download-button {
+  margin: 5% 3% 5% 0;
+}
+
+/* Title Image */
+.title-image {
+  width: 60%;
+  right: 30%;
+}
+
+#latest-episode {
+position: relative;
+}
+
+
+.youtube-channel {
+  position: absolute;
+  right: 30%;
+}
+
+/* about */
+#about {
+  position: relative;
+}
+
+.about-box {
+  margin-bottom: 1rem;
+}
+
+.about-img {
+  border-radius: 399px;
+  width: 50%;
+}
+
+.rotate {
+  animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.about-icon {
+  width: 100%;
+  color: #ef8172;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
+.about-icon:hover {
+  color: #ff4c68;
+}
+
+.about-title {
+  font-size: 1.5rem;
+  margin: auto;
+}
+
+
+/* Sponsors Section */
+
+#sponsors {
+  padding: 7% 15%;
+}
+
+.sponsors-image {
+  width: 10%;
+  margin: 20px;
+}
+
+.sponsors-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+#updates {
+padding: 7% 15%;
+}
+
+.social-icon {
+  margin: 0 20px 10px;
+}
+
+.centerthing {
+  text-align: center;
+}
+
+.pope {
+  width: 100%;
+}
