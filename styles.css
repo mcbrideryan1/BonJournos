@@ -34,6 +34,10 @@ p.white-section {
   padding: 7% 15%;
 }
 
+.container-other {
+  padding: 0;
+}
+
 /* sections */
 
 .colored-section {
@@ -48,6 +52,8 @@ p.white-section {
 /* Navigation Bar */
 .navbar {
   padding-bottom: 0 0 4.5rem;
+  background-color: #129a00;
+  width: 100%;
 }
 
 .navbar-brand {
