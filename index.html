@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Bon Journos</title>
+  <link rel="icon" type="image/jpg" href="logonofm FINAL.jpg" sizes="16x16">
 
   <!-- Bootstrap Styles -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
@@ -23,6 +24,28 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<!-- form Javascript -->
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+<script>
+function SubForm (){
+    $.ajax({
+        url:'https://api.apispreadsheets.com/data/14527/',
+        type:'post',
+        data:$("#myForm").serializeArray(),
+        success: function(){
+          alert("Thanks for signing up to listen to this utter trash!")
+        },
+        error: function(){
+          alert("Hey. HEY. This didn't work. Not to alarm you or anything. But it failed. It was a failure.")
+        }
+    });
+}
+</script>
+
 
 </head>
 
@@ -59,7 +82,7 @@
       <!-- Title -->
       <div class="row">
         <div class="col-lg-6 col-md-12">
-          <div>
+          <div class="heading-aligner">
             <h1 class="big-heading">The podcast with all the trimmings</h1>
           </div>
         </div>
@@ -127,16 +150,16 @@
 
         <div class="carousel-item active container-fluid">
 
+<img class="sponsors-image" src="https://image.freepik.com/free-vector/cute-cat-shocked-cartoon_97365-547.jpg" alt="cat">
           <h2 class="sponsors-text">Pussy Magnet</h2>
-          <img class="sponsors-image" src="https://image.freepik.com/free-vector/cute-cat-shocked-cartoon_97365-547.jpg" alt="cat">
-          <em>Find them online</em>
+          <em>Is that pesky pussy of yours disappearing when dinner is coming near? Are you fed up of scraping your feline friends off the freeway? <br>Well struggle no more; Pussy Magnet is the device that has all the charm stockholm syndrome can offer. Learn more on our website. Meow!</em>
 
         </div>
 
         <div class="carousel-item container-fluid">
-          <h2 class="sponsors-text">eBae</h2>
           <img class="sponsors-image" src="https://ebae.com/static/media/logo.a309cce0.png" alt="ebae">
-          <em>Find them online</em>
+          <h2 class="sponsors-text">eBae</h2>
+          <em>Want to find true love and stave off eternal loneliness? Well eBae is the app for you. You can keep your self-esteem issues at bae and find a new partner when you're disposed of! It's almost probably foolproof!</em>
 
         </div>
 
@@ -161,11 +184,22 @@
     <h3>
       Be the first to know about our very evitible comeback!
     </h3>
-    <form action="welcome.php" method="post">
-      Name: <input type="text" name="name"><br>
-      E-mail: <input type="text" name="email"><br>
-      <input type="submit">
+
+    <form id="myForm">
+      <label>Name</label>
+      <br/>
+      <input name="name" />
+      <br/>
+      <label>Email</label>
+      <br/>
+      <input name="email" type="email" />
+      <br/>
+      <br/>
     </form>
+    <button onclick="SubForm()">Submit</button>
+
+
+
 
   </section>
 

@@ -81,6 +81,7 @@ p.white-section {
 .title-image {
   width: 60%;
   right: 30%;
+  vertical-align: middle;
 }
 
 #latest-episode {
@@ -167,4 +168,18 @@ padding: 7% 15%;
 
 .pope {
   width: 100%;
+}
+
+@media (min-width: 1200px) {
+  .heading-aligner {
+    text-align: left;
+    margin-left: 0.9375rem;
+  }
+}
+
+
+@media (min-width: 1000) and (max-width: 1030) {
+  .title-image {
+    width: 80%;
+  }
 }
